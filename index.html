@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym stuff</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      body {
+        font-family: "Assistant", sans-serif;
+        min-height: 100vh;
+      }
+
+      section {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 1rem;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em;
+      }
+
+      section > * {
+        aspect-ratio: 3 / 4;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      section > * > div {
+        padding: 1.5rem;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      }
+
+      section > * > div > * {
+        text-shadow: 1px 1px 2px black;
+      }
+
+      p {
+        margin-top: 0.5em;
+      }
+
+      .cardio {
+        background-image: url("assets/cardio.jpg");
+      }
+
+      .strength {
+        background-image: url("assets/strength.jpg");
+      }
+
+      .flexibility {
+        background-image: url("assets/flexibility.jpg");
+      }
+
+      .home-gym {
+        background-image: url("assets/home-gym.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="cardio">
+        <div>
+          <h2>Cardio</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="strength">
+        <div>
+          <h2>Strength</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="flexibility">
+        <div>
+          <h2>Flexibility</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="home-gym">
+        <div>
+          <h2>Home gym</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
